@@ -6,6 +6,42 @@
     font-family: "Segoe UI", sans-serif; 
 }
 
+// CRIANDO BOTAO DE VOLTAR AO ::-ms-tooltip
+
+body {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    bottom: 20px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: #000000;
+    text-decoration: none;
+}
+
+.btn::after {
+    content: "↑";
+    
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color);
+
+    transition: margin-top 250ms;
+}
+
+.btn:hover::after {
+    margin-top:-8px;
+}
+
 :root {
     --black: #1D1E20;
     --gray: #27292b; 
@@ -421,6 +457,10 @@ section {
 
 
 @media (min-width: 0) and (max-width: 480px) {
+    .btn {
+        right: 1rem;
+    }
+
     .container {
         height: 85vh;
     }
@@ -489,6 +529,7 @@ section {
 
     section .me {
         padding: 1rem;
+        margin: auto;
     }
 
     .text-me {
