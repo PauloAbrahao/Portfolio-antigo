@@ -47,6 +47,7 @@ body {
     --gray: #27292b; 
     --font-color: #DBDBDB;
     --blue: #62D8DB; 
+    --dark-blue: #3fb1d4;
 }
 
 // MENU ACIMA
@@ -179,6 +180,45 @@ nav {
     margin-top: 1.5rem;
     color: var(--font-color);
 }
+
+.profile-apresentation {
+    height: 3rem;
+}
+
+.download {
+    margin-top: 3.5rem;
+
+    background-color: var(--blue);
+    border-radius: 9px; 
+    width: 15rem;   
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    a {
+        margin: auto;
+
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+
+        font-size: 1.2rem;
+        color: var(--black);
+    }
+
+    img {
+        width: 1.7rem;
+        margin: auto 0 auto .5rem;
+    }
+}
+
+.download:hover {
+    background-color: var(--dark-blue);
+}
+
+
     
 // QUEM SOU EU
 
@@ -450,13 +490,20 @@ section {
 
 
 
+// 480
+@media (min-width: 0) and (max-width: 599px) {
 
+    .download img {
+        margin: 0;
+        height: 2.5rem;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
 
+    .download a {
+        margin-left: -10px;
+    }
 
-
-
-
-@media (min-width: 0) and (max-width: 480px) {
     .btn {
         right: 1rem;
     }
@@ -520,6 +567,11 @@ section {
             width: 45%;
         }
     }
+
+    .profile-apresentation .typewrite {
+        font-size: 1.7rem;
+    }
+
 
     // TEXTOS
 
@@ -673,4 +725,503 @@ section {
         padding: 0.5rem;
     }
 
+}
+
+
+@media (min-width: 0) and (max-width: 320px) { 
+
+    .profile {
+        margin-top: 5rem;
+    }
+
+    .download {
+        margin-top: 3rem;
+    }
+
+    .download img {
+        margin: 0;
+        height: 2.5rem;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .download a {
+        margin-left: -10px;
+    }
+
+    .conteudo-header li a {
+        font-size: .8rem;    
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas {
+        justify-content: center;
+    }
+
+    .profile-apresentation .typewrite {
+        font-size: 1.6rem;
+    }
+}
+
+@media (width: 375px) {
+    .profile {
+        margin-top: 7rem;
+    }
+
+    .download {
+        margin-top: 5rem;
+    }
+
+    .download img {
+        margin: 0;
+        height: 2.5rem;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .download a {
+        margin-left: -10px;
+    }
+}
+
+@media (width: 411px) {
+    .profile {
+        margin-top: 8rem;
+    }
+
+    .download {
+        margin-top: 7rem;
+    }
+
+    .download img {
+        margin: 0;
+        height: 2.5rem;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .download a {
+        margin-left: -10px;
+    }
+}
+
+@media (width: 414px) {
+    .profile {
+        margin-top: 8rem;
+    }
+
+    .download {
+        margin-top: 5rem;
+    }
+
+    .download img {
+        margin: 0;
+        height: 2.5rem;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    .download a {
+        margin-left: -10px;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px) { 
+
+    .profile {
+        margin-top: 8rem;
+    }
+
+    .download {
+        width: 20rem;
+        height: 3rem;
+
+        margin-top: 10rem;
+    }
+
+    .download img {
+        margin: 0;
+        height: 4.5rem;
+
+        margin-top: -10px;
+        margin-left: 15px;
+    }
+
+    .download a {
+        font-size: 1.5rem;
+        margin-left: -20px;
+    }
+
+    .menu .logo {
+        margin-left: -1rem;
+    }
+
+    .conteudo-header li a {
+        font-size: 1.075rem;    
+    }
+
+    nav {
+        margin-right: 3rem;
+    }
+
+    .profile {
+        margin-top: 5rem;
+    }
+
+    .profile img {
+        width: 33%;
+    }
+
+    .profile-apresentation .typewrite {
+        font-size: 2.7rem;
+    }
+
+    section .text-me {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .text-me .class-img {
+        width: 85vw;
+
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        img {
+            width: 2.5rem;
+            margin: 0 1rem 0 1rem;
+        }
+    }
+
+    section .text-me .left-info p {
+        font-size: 1.4rem;
+    }
+
+    section .text-me .right-info p {
+        font-size: 1.4rem;
+    }
+
+    section .text-me .left-info .social-media {
+        width: 1.8rem;
+        margin-top: 3rem;
+    }
+
+    
+    .portfolio-me .projetos-all {
+        margin-top: 2.5rem;
+        h3 {
+            margin-top: 2rem;
+            font-size: 1.7rem;
+        }
+    }
+
+    .projeto-img {
+        #retira {
+            display: none;
+            visibility: hidden;
+        }
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    .portfolio {
+        padding-top: 2.7rem;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1240px) { 
+
+    .profile {
+        margin-top: 8rem;
+    }
+
+    .download {
+        width: 22rem;
+        height: 3.2rem;
+
+        margin-top: 10rem;
+    }
+
+    .download img {
+        margin: 0;
+        height: 4.5rem;
+
+        margin-top: -10px;
+        margin-left: 15px;
+    }
+
+    .download a {
+        font-size: 1.7rem;
+        margin-left: -20px;
+    }
+
+    .menu .logo {
+        margin-left: -.9rem;
+    }
+
+    .conteudo-header {
+        margin-top: 1rem;
+    }
+
+    .conteudo-header li a {
+        font-size: 1.3rem;    
+    }
+
+    nav {
+        margin-right: 3rem;
+    }
+
+    .profile {
+        margin-top: 7rem;
+    }
+
+    .profile img {
+        width: 35%;
+    }
+
+    .profile-apresentation .typewrite {
+        font-size: 3rem;
+    }
+
+    section .text-me {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .text-me .class-img {
+        width: 85vw;
+
+        display: flex;
+        flex-direction: row;    
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        img {
+            width: 3rem;
+            margin: 0 1rem 0 1rem;
+        }
+    }
+
+    section .text-me .left-info p {
+        font-size: 1.7rem;
+    }
+
+    section .text-me .right-info p {
+        font-size: 1.7rem;
+    }
+
+    section .text-me .left-info .social-media {
+        width: 1.8rem;
+        margin-top: 3rem;
+    }
+
+    .portfolio h2 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .portfolio-me .projetos-all {
+        margin-top: 2.5rem;
+
+        h3 {
+            margin-top: 6rem;
+            font-size: 2.2rem;
+        }
+
+        .projetos {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 100%;
+
+            margin-top: 5rem;
+        }
+    }
+
+    .projeto-img {
+        img {
+            width: 25rem;
+        }
+    }
+    
+
+    /*
+    .projeto-img {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+        #retira {
+            display: none;
+            visibility: hidden;
+        }
+        
+        
+        img {
+            align-items: center;
+            width: 30rem;
+        }
+    }
+    */
+    
+    
+    .portfolio {
+        padding-top: 3.5rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas {
+        margin-top: 5rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas .habilidade01 .bloco {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas .habilidade01 span {
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+@media (min-width: 1920px) {
+    .menu .logo {
+        font-size: 1.2rem;
+    }
+
+    .conteudo-header {
+        margin-top: 1rem;
+    }
+
+    .conteudo-header li a {
+        font-size: 1.6rem;    
+    }
+
+    nav {
+        margin-right: 3rem;
+    }
+
+    .profile {
+        margin-top: 7rem;
+    }
+
+    .profile img {
+        width: 20%;
+    }
+
+    .profile-apresentation .typewrite {
+        font-size: 3rem;
+    }
+
+    section .text-me {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .text-me .class-img {
+
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        img {
+            width: 2.4rem;
+            margin: 0 1.2rem 0 1.2rem;
+        }
+    }
+
+    section .text-me .left-info p {
+        font-size: 1.7rem;
+    }
+
+    section .text-me .right-info p {
+        font-size: 1.7rem;
+    }
+
+    section .text-me .left-info .social-media {
+        width: 1.8rem;
+        margin-top: 3rem;
+    }
+
+    .portfolio h2 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .portfolio-me .projetos-all {
+        margin-top: 2.5rem;
+        height: 75vh;
+
+        h3 {
+            //margin-top: 8rem;
+            font-size: 2.5rem;
+        }
+
+        .projetos {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    
+    
+    .portfolio {
+        padding-top: 3.5rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas {
+        margin-top: 5rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas .habilidade01 .bloco {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .section-habilidades .habilidades .habilidades-me .habilidades-ferramentas .habilidade01 span {
+        font-size: 1.6rem;
+    }
 }
