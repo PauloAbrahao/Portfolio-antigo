@@ -1,4 +1,4 @@
-//made by vipul mirajkar thevipulm.appspot.com
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -8,6 +8,10 @@ var TxtType = function(el, toRotate, period) {
     this.tick();
     this.isDeleting = false;
 };
+
+
+
+// TYPERWRITER
 
 TxtType.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
@@ -57,6 +61,7 @@ window.onload = function() {
 };
 
 
+
 // ANIMAÇÃO LINK INTERNO
 
 $('.nav a[href^="#"]').on('click', function(e) {
@@ -68,3 +73,5 @@ $('.nav a[href^="#"]').on('click', function(e) {
       scrollTop: targetOffset - 100
     }, 500);
 });
+
+
